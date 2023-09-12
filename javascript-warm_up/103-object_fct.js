@@ -11,7 +11,6 @@ YOUR CODE HERE
 myObject.incr = function () {
     myObject.value++
 };
-exports.myObject.incr = myObject.incr
 
 myObject.incr();
 console.log(myObject);
