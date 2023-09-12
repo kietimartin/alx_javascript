@@ -8,8 +8,8 @@ console.log(myObject);
 /*
 YOUR CODE HERE
 */
-myObject.incr = () => {
-    myObject.value++
+myObject.incr = function () {
+    this.value++
 };
 
 myObject.incr();
