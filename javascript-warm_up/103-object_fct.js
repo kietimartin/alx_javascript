@@ -8,7 +8,7 @@ console.log(myObject);
 /*
 YOUR CODE HERE
 */
-exports.incr = function () {
+myObject.incr = function () {
     myObject.value++
 };
 
