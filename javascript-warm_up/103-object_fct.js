@@ -8,9 +8,10 @@ console.log(myObject);
 /*
 YOUR CODE HERE
 */
-myObject.incr = function incr () {
+myObject.incr = function () {
     myObject.value++
 };
+exports.myObject.incr = myObject.incr
 
 myObject.incr();
 console.log(myObject);
