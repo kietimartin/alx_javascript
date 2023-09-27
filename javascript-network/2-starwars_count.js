@@ -2,10 +2,7 @@
 
 const req = require('request');
 
-let count = 0;
-const char_id = process.argv[2];
-const searchQuery = `https://swapi.dev/api/people/${id}/`;
-const url = 'https://swapi-api.alx-tools.com/api/films/';
+const url =  process.argv[2];
 
 req.get(url, function (body, error, response) {
     // parsing the JSON into an object
