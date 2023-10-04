@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <script>
+      let availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
+      if (typeof Storage === "undefined") {
+        alert("Sorry, your browser does not support Web storage. Try again with a better one");
+      } else {
+        createStore();
+        displayCart();
+      }
+
+      function getCartFromStorage() {
+        let cart = sessionStorage.getItem("cart");
+        if (cart === null) {
+          return {};

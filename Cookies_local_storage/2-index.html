@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies</title>
+    <script>
+        function setCookies() {
+    const firstname = document.getElementById('firstname').value;
+    const email = document.getElementById('email').value;
+
+    // expiration
+    const expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + 10);
+    }
+   
+    // read cookie
+    function getCookie(name) {
+        let cookies = document.cookie.split("; ");
+        for (let i = 0; i < cookies.length; i++) {
+          let cookie = cookies[i];
